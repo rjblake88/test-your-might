@@ -75,12 +75,20 @@ body{
     font-weight: 500;
 }
 
-.buttons button.continue button.retry{
-    color: #008080;
-    border-color: #008080;
+.buttons button.continue {
+    color: white;
+    border-color: #96d8d8;
 }
 
-.buttons button.quit button.quit{
+.buttons button.continue:hover {
+    background:#008080
+}
+
+.buttons button.quit {
+    color:#96d8d8;
+}
+
+.buttons button.quit:hover {
     color: white;
     border-color: #008080;
 }
@@ -268,15 +276,24 @@ footer .next-btn:hover {
     color: #008080;
     font-size: 16px;
     font-weight: 500;
-    border-color: #008080;
 }
 
-.buttons button.retry:hover{
+.buttons button.continue {
+    color: #008080;
+    border-color: #96d8d8;
+}
+
+.buttons button.continue:hover {
     background:#008080;
     color: white;
 }
 
-.buttons button.exit:hover {
+.buttons button.quit {
+    color: #008080;
+    border-color: #96d8d8;
+}
+
+.buttons button.quit:hover {
     background:#008080;
     color: white;
 }
