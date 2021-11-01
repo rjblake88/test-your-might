@@ -9,7 +9,7 @@ body{
     background: #008080;
 }
 
-.start-btn, .info-box, .quiz-box, .result-box {
+.start_btn, .info_box, .quiz-box, .result-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,7 +18,7 @@ body{
 
 /*Start Button Styling*/
 
-.start-btn button {
+.start_btn button {
     font-size: 25px;
     font-weight: 500;
     color:#008080;
@@ -29,16 +29,24 @@ body{
     background: white;
 }
 
-.info-box{
+.info_box{
     width: 550px;
     background: white;
     border-radius: 5px;
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
 }
 
-.info-box .info-title {
+.info_box.activeInfo, .quiz_box.activeQuiz {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.info_box .info-title {
     height: 60px;
     width: 100%;
     border-bottom: 1px solid whitesmoke;
@@ -49,16 +57,16 @@ body{
     font-weight: 600;
 }
 
-.info-box .info-list {
+.info_box .info-list {
     padding: 15px 35px;
 }
 
-.info-box .info-list .info {
+.info_box .info-list .info {
     margin: 5px 0;
     font-size: 17px;
 }
 
-.info-box .buttons {
+.info_box .buttons {
     height: 60px;
     display: flex;
     align-items: center;
@@ -66,7 +74,7 @@ body{
     padding: 0 35px;
 }
 
-.info-box .buttons button {
+.info_box .buttons button {
     margin: 0 5px;
     height: 40px;
     width: 100px;
@@ -135,13 +143,13 @@ body{
     padding: 0;
 }
 
-.quiz-box header .timer .time-text {
+.quiz-box header .timer .time_text {
     font-weight: 400;
     font-size: 16px;
     user-select: none;
 }
 
-/*.quiz-box header .timer .timer-sec {}*/
+/*.quiz-box header .timer .timer_sec {}*/
 
 .quiz-box section {
     padding: 25px 30px 20px 30px;
