@@ -30,10 +30,12 @@ body{
 }
 
 .info-box{
-    display: none;
     width: 550px;
     background: white;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .info-box .info-title {
@@ -42,7 +44,7 @@ body{
     border-bottom: 1px solid whitesmoke;
     display: flex;
     align-items: center;
-    padding: 0 35px;
+    padding: 0 30px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -96,10 +98,12 @@ body{
 /*Quiz box styling*/
 
 .quiz-box {
-    display: none;
     width: 550px;
     background: white;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .quiz-box header {
@@ -234,6 +238,9 @@ footer .next-btn:hover {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .result-box .icon {
