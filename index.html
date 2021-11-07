@@ -19,64 +19,56 @@
         </div>
         <div class="info-list">
             <div class="info">1. The quiz is 5 questions</div>
-            <div class="info">2. You will have 1 minute to answer all questions</div>
+            <div class="info">2. You will have 15 seconds to answer each question</div>
             <div class="info">3. Once picked, answers can not be changed</div>
             <div class="info">4. Have fun!</div>
         </div>
         <div class="buttons">
-            <button class="quit">Exit</button>
-            <button class="continue">Continue</button>
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
         </div>
     </div>
-
-<!--Quiz Box-->
+    <!-- Quiz Box -->
     <div class="quiz_box">
         <header>
-            <div class="title">Test Your Might</div>
+            <div class="title">Test Your Might!</div>
             <div class="timer">
-                <div class="time_text">Remaining Time:</div>
-                <div class="timer_sec">60</div>
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
             </div>
+            <div class="time_line"></div>
         </header>
         <section>
-            <div class="questions_list">
-                <!-- <span>Which of these is NOT a programming language?</span> -->
+            <div class="que_text">
+                <!-- question from JavaScript -->
+                <script>que_text.innerHTML = que_tag</script>
             </div>
-            <div class="answer_list">
-                <!-- <div class="answer">
-                    <span>Kung-fu</span>
-                        <div class="icon tick"><i class="fas fa-check"></i></div>
-                </div>
-                <div class="answer">
-                    <span>HTML</span>
-                        <div class="icon cross"><i class="fas fa-times"></i></div>
-                </div>
-                <div class="answer">
-                    <span>CSS</span>               
-                </div>
-                <div class="answer">
-                    <span>JavaScript</span>          
-                </div> -->
+            <div class="option_list">
+                <!-- options from JavaScript -->
+                <script>option_list.innerHTML = option_tag</script>
             </div>
         </section>
-
-        <!--quiz_box footer-->
+        <!-- footer of Quiz Box -->
         <footer>
+            <div class="total_que">
+                <!-- Question Count Number from JavaScript -->
+            </div>
             <button class="next_btn">Next</button>
         </footer>
     </div>
-
-    <div class="result-box">
+    <!-- Result Box -->
+    <div class="result_box">
         <div class="icon">
-            <i class="far fa-thumbs-up"></i>
+            <i class="fas fa-crown"></i>
         </div>
-        <div class="complete-text">Complete!</div>
-        <div class="score-text">
-            <span>Your Might is <p>0</p> out of <p>5</p></span></div>
-            <div class="buttons">
-                <button class="continue">Retry</button>
-                <button class="quit">Exit</button>
-            </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
     </div>
 
     <script src="assets/JS/questions_list.js"></script>

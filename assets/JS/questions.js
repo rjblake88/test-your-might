@@ -1,4 +1,4 @@
-//question and answer array
+//questions and answers
 
 let questions = [
     {
