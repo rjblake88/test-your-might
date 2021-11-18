@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="https://kit.fontawesome.com/49e099be46.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Start Button-->
+    <div class="start_btn"><button>Start</button></div>
+    
+    <!--Rules-->
+    <div class="info_box">
+        <div class="info-title">
+            <span>The Rules:</span>
+        </div>
+        <div class="info-list">
+            <div class="info">1. The quiz is 5 questions</div>
+            <div class="info">2. You will have 15 seconds to answer each question</div>
+            <div class="info">3. Once picked, answers can not be changed</div>
+            <div class="info">4. Have fun!</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Test Your Might!</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- question from JavaScript -->
+                <script>que_text.innerHTML = que_tag</script>
+            </div>
+            <div class="option_list">
+                <!-- options from JavaScript -->
+                <script>option_list.innerHTML = option_tag</script>
+            </div>
+        </section>
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="assets/JS/questions_list.js"></script>
+    <script src="assets/JS/script.js"></script>
+    
+</body>
+</html>
